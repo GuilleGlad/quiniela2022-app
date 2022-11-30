@@ -1,0 +1,58 @@
+<div class="container">
+    <!-- <mat-progress-bar [mode]="'indeterminate'" *ngIf="(IsLoggedIn | async) && (loader_hide$ | async)"></mat-progress-bar>     -->
+    <mat-toolbar>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <span class="username_label">{{(username$ | async) | uppercase}}</span>
+            <button mat-menu-item [routerLink]="['/info']">
+                <mat-icon class="my_icon info_icon">info</mat-icon>
+                <span>Información</span>
+            </button>
+            <ng-container *ngIf="IsLoggedIn | async">
+                <button mat-menu-item [routerLink]="['/quiniela']">
+                    <mat-icon class="my_icon resultados_icon">event_note</mat-icon>
+                    <span>Mi Quiniela</span>
+                </button>
+            </ng-container>
+            <button mat-menu-item [routerLink]="['/users']">
+                <mat-icon class="my_icon resultados_icon">poll</mat-icon>
+                <span>Resultados Generales</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/partidos']">
+                <mat-icon class="my_icon partidos_icon">dashboard</mat-icon>
+                <span>Partidos</span>
+            </button>
+            <button mat-menu-item *ngIf="(IsLoggedIn | async) == false" [routerLink]="['/login']">
+                <mat-icon class="my_icon login_icon">login</mat-icon> 
+                <span>Entrar</span>
+            </button>
+            <button mat-menu-item (click)="call_logout()" *ngIf="IsLoggedIn | async" class="logout_link">
+                <mat-icon class="my_icon login_icon">logout</mat-icon>                
+                <span>Salir</span>
+            </button>            
+          </mat-menu>
+        <a [routerLink]="['/']" class="home_link">
+            <!-- <mat-icon class="my_icon home_icon">home</mat-icon> -->
+            Quiniela 2022 <span *ngIf="(username$ | async) " class="header_username">({{(username$ | async) | uppercase}})</span>
+        </a>
+        <span class="puntos_span" *ngIf="(username$ | async) !== 'admin' && (IsLoggedIn | async)">
+            <span style="margin-top: 8px;">
+                <mat-progress-spinner mode="indeterminate" diameter="16" *ngIf="(IsLoggedIn | async) && (loader_hide$ | async)"></mat-progress-spinner>
+            </span>
+            &nbsp;
+            <mat-label class="puntos_label">Puntos: {{puntos$ | async}}</mat-label>
+        </span>
+        <span class="puntos_span" *ngIf="(username$ | async)  == 'admin' && (IsLoggedIn | async) == false">
+            <span style="margin-top: 8px;">
+                <mat-progress-spinner mode="indeterminate" diameter="16" *ngIf="loader_hide$ | async"></mat-progress-spinner>
+            </span>
+            &nbsp;
+            <mat-label class="puntos_label">Resultados</mat-label>
+        </span>
+    </mat-toolbar>
+</div>
+<!-- <br>
+<span class="welcome_message">Bienvenido, <strong>{{username}}</strong></span>
+<br> -->

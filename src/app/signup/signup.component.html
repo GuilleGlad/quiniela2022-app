@@ -1,0 +1,56 @@
+<div class="titulo">REGISTRO</div>
+<mat-card class="card">
+    <!-- <mat-card-header>
+      <h4 class="text-center login_title"> Acceso </h4>
+    </mat-card-header> -->
+    <mat-card-content>
+      <div class="text-center container">
+        <form class="form loginForm" #signupForm="ngForm">
+          <div class="example-container">
+            <mat-form-field class="loginInput">
+                <input 
+                matInput 
+                placeholder="Nombre" 
+                name="firstname" 
+                #firstname="ngModel" 
+                [(ngModel)]="data.firstname"
+                >
+              </mat-form-field>         
+              <mat-form-field class="loginInput">
+                <input 
+                matInput 
+                placeholder="Apellido" 
+                name="lastname" 
+                #lastname="ngModel" 
+                [(ngModel)]="data.lastname"
+                >
+              </mat-form-field>                  
+              <mat-form-field class="loginInput">
+                <input 
+                matInput 
+                placeholder="Usuario" 
+                name="username" 
+                #username="ngModel" 
+                [(ngModel)]="data.username"
+                >
+              </mat-form-field>
+              <mat-form-field class="loginInput">
+                <input 
+                matInput 
+                type="password" 
+                placeholder="Contraseña" 
+                name="password"
+                #password = "ngModel"
+                [(ngModel)]="data.password"
+                >    
+              </mat-form-field>
+            <div class="mt-top login_buttons">
+              <button [routerLink]="['/login']" mat-raised-button color="accent" mat-button><mat-icon>undo</mat-icon> Volver</button>&nbsp;
+              <button *ngIf="captcha_valid$ | async" disabled="{{quinielas_modo_lectura$ | async}}" (click)="onSubmit(signupForm)" mat-raised-button color="primary" mat-button><mat-icon>create</mat-icon> Registrar</button>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LeKc90iAAAAANtz1CLHegj501v_60eICyBygTf_"></re-captcha>
+          </div>
+        </form>
+      </div>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,73 @@
+.marcador_usuario_odd{
+    padding-top: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    width: auto;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: rgba(255, 169, 72, 0.9);
+    display: flex;
+    flex-direction: row;
+}
+.marcador_usuario_even{
+    padding-top: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    /* width: auto; */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: rgba(255, 198, 132, 0.856);
+    display: flex;
+    flex-direction: row;
+}
+.name_cell_data,.last_cell_data {
+    width: 150px;
+    font-size: 0.9em;
+    margin: 4px;
+}
+.id_cell_data{
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);    
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.username_cell_data{
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);    
+    width: 150px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pago{
+    padding: 0px 15px;
+    color: rgb(0, 0, 0);    
+    width: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.puntos_cell_data{
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);    
+    width: 100px;
+    font-size: 1em;
+  margin-left: 20px;
+  text-align: center;
+    font-weight: bold;
+}
+.puntos_cell_total{
+    width: 100px;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+a{
+    text-decoration: none;
+}
+

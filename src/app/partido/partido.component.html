@@ -1,0 +1,32 @@
+<div class="partido">
+    <input type="hidden" [value]="partido_id" name="partido_id">
+    <input type="hidden" [value]="marcador_id" name="marcador_id">
+    <div class="col_equipo"><app-equipo [nombre_equipo]="equipo1"></app-equipo></div>
+    <div class="col_marcador">
+        <input type="hidden" [value]="marcador1_quiniela" name="marcador1_quiniela" style="width: 50px;">
+        <input #marcador1 name="marcador1" placeholder="Marcador" type="number" min="0" max="20" class="input_marcador" onkeydown="javascript: return event.keyCode == 69 ? false : true" 
+        [disabled]="(marcador1_disabled$ | async) || no_editable || (solo_lectura$ | async)"
+        (blur)="guardaMarcador(1,$event,+marcador1)" 
+        (focus)="selectContent(marcador1)"
+        [hidden]="!marcador1_loader_status" 
+        [value]="check_marcador_undefined(marcador1_quiniela)"
+        [ngClass]="this.marcador_id? 'input_marcador_noset1' : 'input_marcador_noset2'"
+        >
+        
+        <img src="/assets/images/football_loader2.gif" alt="loading..."  width="50" #marcador1_loader class="marcador_loader" [hidden]="marcador1_loader_status">
+    </div>
+    <div class="col_equipo"><app-equipo [nombre_equipo]="equipo2"></app-equipo></div>
+    <div class="col_marcador">
+        <input type="hidden" [value]="marcador2_quiniela" name="marcador2_quiniela" style="width: 50px;">
+        <input #marcador2 name="marcador2" placeholder="Marcador" type="number" min="0" max="20" class="input_marcador" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+        [disabled]="(marcador2_disabled$ | async) || no_editable || (solo_lectura$ | async)"
+        (blur)="guardaMarcador(2,$event,+marcador2)" 
+        (focus)="selectContent(marcador2)" 
+        [hidden]="!marcador2_loader_status" 
+        [value]="check_marcador_undefined(marcador2_quiniela)"
+        [ngClass]="this.marcador_id? 'input_marcador_noset1' : 'input_marcador_noset2'"
+        >
+        <img src="/assets/images/football_loader2.gif" alt="loading..." width="50" #marcador2_loader class="marcador_loader" [hidden]="marcador2_loader_status">
+    </div>
+</div>
+

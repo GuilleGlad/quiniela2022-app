@@ -1,0 +1,79 @@
+.partido_cells{
+    /* border-radius: 15px; */
+    background-color: white;
+    border: solid #adadad 1px;
+    border-bottom: none;
+    border-top: none;
+}
+.form_element{
+    /* color: black !important; */
+    text-align: center;
+}
+.form_element input{
+    /* color: black !important; */
+    text-align: center;
+}
+
+.input_marcador{
+    /* margin-top: 12px; */
+    width: 50px;
+    height: 56px;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    font-size: 1.5em;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.input_marcador:disabled{
+    background-color: rgb(27, 129, 27);
+    color: white;
+}
+.input_marcador:hover{
+    background-color: lightgray;
+}
+.input_marcador_noset1{
+    background-color: orange;
+}
+.input_marcador_noset2{
+    background-color: rgb(160, 160, 160) !important;
+}
+.input_marcador:focus{
+    background-color: beige;
+}
+.marcador_loader{
+    margin-top: 1px;
+    width: 54px;
+    height: 58px;
+    border-width: 1px;
+    text-align: center;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    font-size: 1.5em;
+}
+.partido{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.col_marcador{
+    width: 55px;
+    height: 60px;
+}
+
+.marcador1{
+    background-color: yellow;
+}
+.marcador2{
+    background-color: yellow;
+}
+.marcador3{
+    background-color: yellow;
+}

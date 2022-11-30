@@ -1,0 +1,82 @@
+.container{
+    height: 2000px;
+}
+.container_data{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    box-shadow: 5px 5px 13px 4px rgb(70, 70, 70);
+}
+.title_div{
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+
+
+}
+
+.resultados_div{
+    padding-top: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* width: auto; */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.856);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 13px 4px rgb(70, 70, 70);
+}
+.id_header{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    width: 50px;
+    font-size: 1em;
+}
+
+.username_header{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    width: 150px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nombre_apellido_header{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    width: 150px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.pago_header{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    /* width: 15px; */
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.puntos_header{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    width: 130px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.puntos_total{
+    text-align: center;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);    
+    width: 80px;
+    margin-left: 20px;
+    font-size: 1em;    
+}
+
+

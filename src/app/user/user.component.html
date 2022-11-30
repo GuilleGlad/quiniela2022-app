@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="container_header">
+        <div class="title_div"><h2>RESULTADOS GENERALES</h2></div>
+    </div>
+    <div class="resultados_div">
+        <div class="id_header">ID</div>
+        <div class="username_header">NOMBRE</div>
+        <div *ngIf="(mobile$ | async) == false" class="nombre_apellido_header">USUARIO</div>
+        <div *ngIf="(mobile$ | async) == false" class="puntos_header">RESULTADOS</div>    
+        <div *ngIf="(mobile$ | async) == false" class="puntos_header">MARCADORES</div>    
+        <div class="puntos_total">TOTAL</div>
+        <div *ngIf="(mobile$ | async) == false" class="pago_header">Pago</div>
+        <!-- <div style="margin-right:10px;"><img src="../../assets/images/loader_800.gif" alt="" width="20"></div> -->
+    </div>
+    <div style="max-width: 800px; margin-left: auto; margin-right:auto">
+        <mat-progress-bar [mode]="'indeterminate'"></mat-progress-bar>        
+    </div>
+    <div class="container_data" *ngFor="let user of users | async; index as i" >
+        <!-- <app-marcador-user [id_cell]="i+1" [name]="user.name" [last]="user.last" [username]="user.username" [puntos]="user.puntos" [icon]="user.icon"></app-marcador-user> -->
+        <app-marcador-user [id_cell]="i+1" [id_user]="user.id" [username]="user.username" [firstname]="user.firstname" [lastname]="user.lastname" [puntos]="user.puntos" [marcador_exacto]="user.marcador_exacto" [marcador_parcial]="user.marcador_parcial" [icon]="user.icon" [mobile]= mobile$></app-marcador-user>
+        <!-- <div class="id_cell_data">{{i+1}}</div>
+        <div class="username_cell_data">{{user.username}}</div>
+        <div class="puntos_cell_data">{{(user.puntos == undefined)?0:user.puntos}}</div>     -->
+    </div>
+</div>
+<!-- <div id="container">
+    <div id="one" class="move">div 1</div>
+    <div id="two" class="move">div 2</div>
+    <div id="three" class="move">div 3</div>
+    <div id="four" class="move">div 4</div>
+    <div id="five" class="move">div 5</div>
+    <div id="six" class="move">div 6</div>    
+</div> -->

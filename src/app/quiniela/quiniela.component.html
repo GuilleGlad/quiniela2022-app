@@ -1,0 +1,41 @@
+<div *ngIf="IsLoggedIn | async" class="">
+    <div class="partido_container">
+        <div class="container">
+            <div *ngIf="username == 'admin'">
+                <mat-label class="titulo_opciones">Opciones de Administrador</mat-label>
+            </div>
+        </div>
+        <div class="container admin_title" *ngIf="username == 'admin'">
+            <section>
+                <mat-label class="titulo_opciones">Usuario</mat-label>&nbsp;
+                <mat-select class="usuario_select" name="usuario_select" (selectionChange)="setUserId($event)" [value]="quiniela_id">
+                    <option class="usuario_option" value="">Select User</option>
+                    <mat-option *ngFor="let u of users;" [value]="u.id" >
+                        {{u.username}}
+                    </mat-option>
+                </mat-select>
+            </section>
+            <section>
+                <mat-label class="titulo_opciones">Quinielas en Modo Lectura</mat-label>&nbsp;
+                <mat-checkbox aria-label="QuinielasModoLectura" (change)="setQuinielaSoloLectura($event.checked)" [checked]="quinielas_modo_lectura$ | async"></mat-checkbox>
+            </section>
+        </div>
+        <div class="container" >
+            <div *ngFor="let p of partidos; let i = index">
+                <span class="fecha_partido">{{p.fecha_partido+" "+p.horario_partido | date:'MMMM dd, yyyy - h:mm a'}}</span>
+                <hr>
+                <app-partido (updateMarcadores)="updateMarcadores()"
+                [equipo1]="partidos[i].equipo1_partido" 
+                [equipo2]="partidos[i].equipo2_partido" 
+                [partido_fecha]="partidos[i].fecha_partido" 
+                [partido_id]="partidos[i].id_partido" 
+                [marcador1_quiniela]="partidos[i].marcador1_quiniela" 
+                [marcador2_quiniela]="partidos[i].marcador2_quiniela"
+                [marcador_id]="partidos[i].marcador_id"
+                [quiniela_id]="+quiniela_id"
+                [no_editable]="solo_lectura$"
+                ></app-partido>
+            </div>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+.container{
+    padding-top: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 90px;
+    height: 50px;
+    background-color: bisque;
+}
+.equipo_div.span{
+    justify-content: center;    
+}
+.equipo_class{
+    text-align: center;
+}
+.equipo_class span{
+    vertical-align: top;
+    color: black;
+    font-size: 0.7rem;
+}
+
+

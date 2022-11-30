@@ -1,0 +1,695 @@
+{
+  "user": [
+    {
+      "id": 0,
+      "name": "admin",
+      "last": "admin",
+      "username": "admin",
+      "password": "admin",
+      "icon": ""
+    },
+    {
+      "id": 1,
+      "name": "guillermo",
+      "last": "garcia",
+      "username": "guilleglad",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 2,
+      "name": "jesus",
+      "last": "chacon",
+      "username": "yisus",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 3,
+      "name": "chamito",
+      "last": "candela",
+      "username": "chamito",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 4,
+      "name": "xiomy",
+      "last": "xiomy",
+      "username": "xiomy",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 5,
+      "name": "jl",
+      "last": "mk",
+      "username": "jl",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 6,
+      "name": "alfi",
+      "last": "alfi",
+      "username": "alfi",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 7,
+      "name": "figueroa",
+      "last": "figueroa",
+      "username": "figueroa",
+      "password": "Password123!!!",
+      "icon": ""
+    },
+    {
+      "id": 8,
+      "name": "ricky",
+      "last": "ricky",
+      "username": "ricky",
+      "password": "Password123!!!",
+      "icon": ""
+    }
+  ],
+  "quiniela": [
+    {
+      "id_quiniela": 0,
+      "user_id_quiniela": 0,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 1,
+      "user_id_quiniela": 1,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 2,
+      "user_id_quiniela": 2,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 3,
+      "user_id_quiniela": 3,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 4,
+      "user_id_quiniela": 4,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 5,
+      "user_id_quiniela": 5,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 6,
+      "user_id_quiniela": 6,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 7,
+      "user_id_quiniela": 7,
+      "status_quiniela": 1
+    },
+    {
+      "id_quiniela": 8,
+      "user_id_quiniela": 8,
+      "status_quiniela": 1
+    }
+  ],
+  "marcador": [
+    {
+      "id_marcador": 1,
+      "status_marcador": 1,
+      "marcador1_marcador": 1,
+      "marcador2_marcador": 1,
+      "quiniela_id_marcador": 0,
+      "partido_id_marcador": 1
+    },
+    {
+      "id_marcador": 2,
+      "status_marcador": 1,
+      "marcador1_marcador": 1,
+      "marcador2_marcador": 1,
+      "quiniela_id_marcador": 1,
+      "partido_id_marcador": 1
+    },
+    {
+      "id_marcador": 3,
+      "status_marcador": 1,
+      "marcador1_marcador": 2,
+      "marcador2_marcador": 0,
+      "quiniela_id_marcador": 0,
+      "partido_id_marcador": 2
+    },
+    {
+      "id_marcador": 4,
+      "status_marcador": 1,
+      "marcador1_marcador": 3,
+      "marcador2_marcador": 2,
+      "quiniela_id_marcador": 0,
+      "partido_id_marcador": 3
+    },
+    {
+      "id_marcador": 5,
+      "status_marcador": 1,
+      "marcador1_marcador": 0,
+      "marcador2_marcador": 0,
+      "quiniela_id_marcador": 1,
+      "partido_id_marcador": 2
+    }
+  ],
+  "partido": [
+    {
+      "id_partido": 1,
+      "titulo_partido": "",
+      "horario_partido": "12:00 US",
+      "fecha_partido": "20 Nov",
+      "equipo1_partido": "Catar",
+      "equipo2_partido": "Ecuador",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 2,
+      "titulo_partido": "",
+      "horario_partido": "09:00 US",
+      "fecha_partido": "21 Nov",
+      "equipo1_partido": "Inglaterra",
+      "equipo2_partido": "Irán",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 3,
+      "titulo_partido": "",
+      "horario_partido": "12:00 US",
+      "fecha_partido": "21 Nov",
+      "equipo1_partido": "Senegal",
+      "equipo2_partido": "Países Bajos",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 4,
+      "titulo_partido": "",
+      "horario_partido": "15:00 US",
+      "fecha_partido": "21 Nov",
+      "equipo1_partido": "Estados Unidos",
+      "equipo2_partido": "Gales",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 5,
+      "titulo_partido": "",
+      "horario_partido": "06:00 US",
+      "fecha_partido": "22 Nov",
+      "equipo1_partido": "Argentina",
+      "equipo2_partido": "Arabia Saudita",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 6,
+      "titulo_partido": "",
+      "horario_partido": "09:00 US",
+      "fecha_partido": "22 Nov",
+      "equipo1_partido": "Dinamarca",
+      "equipo2_partido": "Túnez",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 7,
+      "titulo_partido": "",
+      "horario_partido": "12:00 US",
+      "fecha_partido": "22 Nov",
+      "equipo1_partido": "México",
+      "equipo2_partido": "Polonia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 8,
+      "titulo_partido": "",
+      "horario_partido": "15:00 US",
+      "fecha_partido": "22 Nov",
+      "equipo1_partido": "Francia",
+      "equipo2_partido": "Australia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 9,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "23 Nov",
+      "equipo1_partido": "Marruecos",
+      "equipo2_partido": "Croacia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 10,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "23 Nov",
+      "equipo1_partido": "Alemania",
+      "equipo2_partido": "Japón",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 11,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "23 Nov",
+      "equipo1_partido": "España",
+      "equipo2_partido": "Costa Rica",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 12,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "23 Nov",
+      "equipo1_partido": "Bélgica",
+      "equipo2_partido": "Canadá",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 13,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "24 Nov",
+      "equipo1_partido": "Suiza",
+      "equipo2_partido": "Camerún",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 14,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "24 Nov",
+      "equipo1_partido": "Uruguay",
+      "equipo2_partido": "Corea del Sur",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 15,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "24 Nov",
+      "equipo1_partido": "Portugal",
+      "equipo2_partido": "Ghana",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 16,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "24 Nov",
+      "equipo1_partido": "Brasil",
+      "equipo2_partido": "Serbia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 17,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "25 Nov",
+      "equipo1_partido": "Gales",
+      "equipo2_partido": "Irán",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 18,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "25 Nov",
+      "equipo1_partido": "Catar",
+      "equipo2_partido": "Senegal",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 19,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "25 Nov",
+      "equipo1_partido": "Países Bajos",
+      "equipo2_partido": "Ecuador",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 20,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "25 Nov",
+      "equipo1_partido": "Inglaterra",
+      "equipo2_partido": "Estados Unidos",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 21,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "26 Nov",
+      "equipo1_partido": "Túnez",
+      "equipo2_partido": "Australia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 22,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "26 Nov",
+      "equipo1_partido": "Polonia",
+      "equipo2_partido": "Arabia Saudita",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 23,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "26 Nov",
+      "equipo1_partido": "Francia",
+      "equipo2_partido": "Dinamarca",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 24,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "26 Nov",
+      "equipo1_partido": "Argentina",
+      "equipo2_partido": "México",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 25,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "27 Nov",
+      "equipo1_partido": "Japón",
+      "equipo2_partido": "Costa Rica",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 26,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "27 Nov",
+      "equipo1_partido": "Bélgica",
+      "equipo2_partido": "Marruecos",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 27,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "27 Nov",
+      "equipo1_partido": "Croacia",
+      "equipo2_partido": "Canadá",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 28,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "27 Nov",
+      "equipo1_partido": "España",
+      "equipo2_partido": "Alemania",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 29,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "28 Nov",
+      "equipo1_partido": "Camerún",
+      "equipo2_partido": "Serbia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 30,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "28 Nov",
+      "equipo1_partido": "Corea del Sur",
+      "equipo2_partido": "Ghana",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 31,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "28 Nov",
+      "equipo1_partido": "Brasil",
+      "equipo2_partido": "Suiza",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 32,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "28 Nov",
+      "equipo1_partido": "Portugal",
+      "equipo2_partido": "Uruguay",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 33,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "29 Nov",
+      "equipo1_partido": "Ecuador",
+      "equipo2_partido": "Senegal",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 34,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "29 Nov",
+      "equipo1_partido": "Países Bajos",
+      "equipo2_partido": "Catar",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 35,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "29 Nov",
+      "equipo1_partido": "Irán",
+      "equipo2_partido": "Estados Unidos",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 36,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "29 Nov",
+      "equipo1_partido": "Gales",
+      "equipo2_partido": "Inglaterra",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 37,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "30 Nov",
+      "equipo1_partido": "Túnez",
+      "equipo2_partido": "Francia",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 38,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "30 Nov",
+      "equipo1_partido": "Australia",
+      "equipo2_partido": "Dinamarca",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 39,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "30 Nov",
+      "equipo1_partido": "Polonia",
+      "equipo2_partido": "Argentina",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 40,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "30 Nov",
+      "equipo1_partido": "Arabia Saudita",
+      "equipo2_partido": "México",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 41,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "1 Dec",
+      "equipo1_partido": "Croacia",
+      "equipo2_partido": "Bélgica",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 42,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "1 Dec",
+      "equipo1_partido": "Canadá",
+      "equipo2_partido": "Marruecos",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 43,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "1 Dec",
+      "equipo1_partido": "Japón",
+      "equipo2_partido": "España",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 44,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "1 Dec",
+      "equipo1_partido": "Costa Rica",
+      "equipo2_partido": "Alemania",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 45,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "2 Dec",
+      "equipo1_partido": "Corea del Sur",
+      "equipo2_partido": "Portugal",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 46,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "2 Dec",
+      "equipo1_partido": "Ghana",
+      "equipo2_partido": "Uruguay",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 47,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "2 Dec",
+      "equipo1_partido": "Serbia",
+      "equipo2_partido": "Suiza",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    },
+    {
+      "id_partido": 48,
+      "titulo_partido": "",
+      "horario_partido": "11:00 US",
+      "fecha_partido": "2 Dec",
+      "equipo1_partido": "Camerún",
+      "equipo2_partido": "Brasil",
+      "estadio_partido": "Al Bayt",
+      "marcador1_partido": 0,
+      "marcador2_partido": 0
+    }
+  ]
+}

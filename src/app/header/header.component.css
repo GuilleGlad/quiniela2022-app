@@ -1,0 +1,56 @@
+a{
+    color: white;
+}
+.home_link{
+    text-decoration: none;
+}
+.home_link:hover{
+    color:azure;
+}
+.my_icon{
+    font-size: 1.5em;
+    padding-right: 4px;
+    margin-right: 4px;
+}
+.login_link_container{
+    text-align: right;
+    width: 80%;
+}
+a > mat-icon{
+    height: 28px;
+}
+.login_link{
+    text-decoration: none;
+}
+.resultados_link{
+    text-decoration: none;
+}
+.quiniela_link{
+    text-decoration: none;
+}
+.logout_link{
+    cursor: pointer;
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.puntos_span{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    color: rgb(255, 255, 255);
+}
+.username_label{
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.mat-toolbar{
+    padding: 0 8px !important;
+    position: fixed;
+    top: 0px;
+}
+.header_username{
+    font-size: 0.6em;
+}

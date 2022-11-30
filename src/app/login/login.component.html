@@ -1,0 +1,45 @@
+<div class="titulo">ACCESO</div>
+<mat-card class="card">
+  <!-- <mat-card-header>
+    <h4 class="text-center login_title"> Acceso </h4>
+  </mat-card-header> -->
+  <mat-card-content>
+    <div class="text-center container">
+      <form class="form loginForm" #loginForm="ngForm">
+        <div style="background-color: white; border-radius: 20px;">
+          <img src="../../assets/images/logo.svg" alt="">
+        </div>
+        <div>
+          <div>
+            <mat-form-field class="loginInput">
+              <input 
+              matInput 
+              placeholder="Usuario" 
+              name="username" 
+              #username="ngModel" 
+              [(ngModel)]="data.username"
+              >
+            </mat-form-field>
+          </div>
+          <div class="mt-top-2">
+            <mat-form-field class="loginInput">
+              <input 
+              matInput 
+              type="password" 
+              placeholder="Contraseña" 
+              name="password"
+              #password = "ngModel"
+              [(ngModel)]="data.password"
+              >    
+            </mat-form-field>
+          </div>
+          <div class="mt-top login_buttons">
+            <button (click)="onSubmit(loginForm)" mat-raised-button color="primary" mat-button><mat-icon>login</mat-icon> Entrar</button>&nbsp;
+            <button [routerLink]="['/signup']" mat-raised-button color="accent" mat-button><mat-icon>add_circle</mat-icon> Registro</button>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>

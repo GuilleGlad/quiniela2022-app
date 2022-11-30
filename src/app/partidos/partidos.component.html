@@ -1,0 +1,23 @@
+<div class="">
+    <div class="partido_container">
+        <div class="titulo_opciones"><h2>RESULTADOS DE LOS PARTIDOS</h2></div>
+        <br>
+        <div class="container" >
+            <div *ngFor="let p of partidos; let i = index">
+                <span class="fecha_partido">{{p.fecha_partido+" "+p.horario_partido | date:'MMMM dd, yyyy - h:mm a':'America/La_Paz'}}</span>
+                <hr>
+                <app-partido 
+                [equipo1]="partidos[i].equipo1_partido" 
+                [equipo2]="partidos[i].equipo2_partido" 
+                [partido_fecha]="partidos[i].fecha_partido" 
+                [partido_id]="partidos[i].id_partido" 
+                [marcador1_quiniela]="partidos[i].marcador1_quiniela" 
+                [marcador2_quiniela]="partidos[i].marcador2_quiniela"
+                [marcador_id]="partidos[i].marcador_id"
+                [quiniela_id]="+quiniela_id"
+                [no_editable]=true
+                ></app-partido>
+            </div>
+        </div> 
+    </div>
+</div>

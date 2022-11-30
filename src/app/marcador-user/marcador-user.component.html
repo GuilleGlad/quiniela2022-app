@@ -1,0 +1,11 @@
+<div [ngClass]="(id_cell%2 == 0)?'marcador_usuario_even':'marcador_usuario_odd'">
+    <div class="id_cell_data">{{id_cell}}</div>
+    <div *ngIf="(mobile | async) == false" class="name_cell_data">{{firstname}} {{lastname}}</div>
+    <div class="username_cell_data"><a [routerLink]="['/view',id_user]">{{username}}</a></div>
+    <div *ngIf="(mobile | async) == false" class="puntos_cell_data">{{(marcador_parcial == undefined)?0:marcador_parcial}}</div>    
+    <div *ngIf="(mobile | async) == false" class="puntos_cell_data">{{(marcador_exacto == undefined)?0:marcador_exacto}}</div>    
+    <div class="puntos_cell_data puntos_cell_total">{{(puntos == undefined)?0:puntos}}</div>    
+    <div *ngIf="(mobile | async) == false" class="pago"><div *ngIf="icon"><img src="../../assets/images/coin.png" alt="pago" width="32" title="Pagado"></div></div>
+    <!-- <div class="puntos_cell_data">{{puntos}}</div>     -->
+</div>
+
